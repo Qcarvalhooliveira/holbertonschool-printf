@@ -1,48 +1,35 @@
 #include "main.h"
 
-int _printf(const char *format, ...) 
+/**
+ *_printf - prints to output according to format
+ *@format: character string
+ *
+ *Return: number of characters printed
+ */
 
-	int num_chars_printed = 0;
+int _printf(const char *format, ...)
+{
 	va_list args;
-	va_start(args, format);
+	int count;
+	char *buffer;
 
-	while (*format != '\0')
-	{
-	if (*format == '%')
-       	{
-	format++;
-       
-	if (*format == '%')
-       	{
-	putchar('%');
-	num_chars_printed++;
-	}
-       	else if (*format == 'c')
-       	{
-	
-	char c = va_arg(args, int);
-	putchar(c);
-	num_chars_printed++;
-	}
-        else if (*format == 's')
-       	{
-	
-	char *s = va_arg(args, char *);
-	while (*s != '\0')
-       	{
-	putchar(*s);
-	s++;
-	num_chars_printed++;
-	}
-	}
-	}
-       	else
-       	{
-	putchar(*format);
-	num_chars_printed++;
-	}
-	format++;
-	}
+	va_start(args, format);
+	count = vsnprintf(NULL, 0, format, args);
 	va_end(args);
-        return num_chars_printed;
+
+	buffer = malloc(count + 1);
+	if (buffer == NULL)
+       	{
+	return -1;
+	}
+
+	va_start(args, format);
+	count = vsnprintf(buffer, count + 1, format, args);
+	va_end(args);
+
+	fwrite(buffer, 1, count, stdout);
+	free(buffer);
+
+	return count;
 }
+
