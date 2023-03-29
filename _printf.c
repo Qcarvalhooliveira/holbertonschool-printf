@@ -9,26 +9,42 @@
 
 int _printf(const char *format, ...)
 {
+	int i = 0, j = 0;
+	int (*f)(va_list);
 	va_list args;
-	int count;
-	char *buffer;
 
 	va_start(args, format);
-	count = vsnprintf(NULL, 0, format, args);
-	va_end(args);
-
-	buffer = malloc(count + 1);
-
-	if (buffer == NULL)
+	if (format == NULL || !format[i + 1])
+		return (-1);
+	while (format[i])
 	{
-	return (-1);
+		if (format[i] == '%')
+		{
+		if (format[i + 1])
+		{
+		if (format[i + 1] != 'c' && format[i + 1] != 's'
+		&& format[i + 1] != '%' && format[i + 1] != 'd'
+		&& format[i + 1] != 'i')
+	{
+		j += _putchar(format[i]);
+		j += _putchar(format[i + 1]);
+		i++;
 	}
-
-	va_start(args, format);
-	count = vsnprintf(buffer, count + 1, format, args);
+	else
+	{
+		f = get_func(&format[i + 1]);
+		j += f(args);
+		i++;
+	}
+	}
+	}
+	else
+	{
+	_putchar(format[i]);
+	j++;
+	}
+	i++;
+	}
 	va_end(args);
-
-	fwrite(buffer, 1, count, stdout);
-	free(buffer);
-	return (count);
+	return (j);
 }
