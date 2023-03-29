@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_ H_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -9,16 +9,16 @@
 #include <unistd.h>
 
 /**
-   *struct func_type - type of structure.
-   * @t: pointer to argument.
-   * @f: pointer - function associated with argument.
+ *struct func_type - type of structure.
+ * @t: pointer to argument.
+ * @f: pointer - function associated with argument.
  */
 typedef struct func_type
 {
-       char *t;
-       int (*f) (va_list);
+	char *t;
+	int (*f)(va_list);
 } func_t;
-int (*get_func(const char *format))(va_list);
+int(*get_func(const char *format))(va_list);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_str(va_list args);
