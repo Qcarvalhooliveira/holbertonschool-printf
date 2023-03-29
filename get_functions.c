@@ -12,16 +12,16 @@ int (*get_func(const char *format))(va_list)
 	{"c", print_char},
 	{"s", print_str},
 	{"%", print_pct},
-	{d", print_dec},
+	{"d", print_dec},
 	{"i", print_dec},
-																{NULL, NULL}
+	{NULL, NULL}
 	};
 
 	for (i = 0; p[i].t; i++)
 	{
 	if (*format == *(p[i].t))
 	{
-																return (p[i].f);
+	return (p[i].f);
 	}
 	}
 	return (NULL);
