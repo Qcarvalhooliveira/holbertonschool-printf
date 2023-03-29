@@ -33,9 +33,9 @@ int print_dec(va_list args)
 	}
 	while (countn >= 1)
 	{
-																len = len + _putchar(((abs / countn) % 10) + '0');
-																countn = countn / 10;
-																}
+	len = len + _putchar(((abs / countn) % 10) + '0');
+	countn = countn / 10;
+	}
 	return (len);
 }
 
