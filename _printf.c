@@ -18,9 +18,10 @@ int _printf(const char *format, ...)
 	va_end(args);
 
 	buffer = malloc(count + 1);
+
 	if (buffer == NULL)
-       	{
-	return -1;
+	{
+	return (-1);
 	}
 
 	va_start(args, format);
@@ -29,7 +30,5 @@ int _printf(const char *format, ...)
 
 	fwrite(buffer, 1, count, stdout);
 	free(buffer);
-
-	return count;
+	return (count);
 }
-
