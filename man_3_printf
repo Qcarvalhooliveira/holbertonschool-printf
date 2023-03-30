@@ -1,0 +1,50 @@
+./" This is the man page of the function _printf
+.TH _printf(3) "30-03-2023" "V1.0" "_printf man page"
+.SH NAME
+_printf
+
+.SH DESCRIPTION
+The printf function is a commonly used function in programming languages that allows for formatted output to be printed to the screen. The name "printf" is derived from "print formatted", as it takes a format string as an argument which specifies how to format the output. The format string includes instructions for mixing multiple strings and other data types into the final output string that will be displayed on the screen.
+
+.SH SYNOPSIS
+
+#include "main.h"
+
+int
+_printf(const char *format, ...);
+
+.SH RETURN VALUE
+
+The printf function return the number of characters printed. If  an error has occured it returns a negative value.
+
+.SH OPTIONS
+There are many options
+.TP
+\fB-%c\fP
+%c : Print a single character.
+.TP
+\fB-%s\fP
+%s : Print a string.
+.TP
+\fB-%%\fP
+%% : Print a percent sign.
+.TP
+\fB-%d\fP
+%d : Print a decimal (base 10) number.
+.TP
+\fB-%i\fP
+%i : Print a integer in base 10.
+.SH EXAMPLE
+To print a string
+
+.SH Exemple
+
+
+
+
+
+
+
+
+.SH AUTHOR
+
