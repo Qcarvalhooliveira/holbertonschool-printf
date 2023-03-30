@@ -9,7 +9,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, j = 0;
+	int i = 0, count = 0;
 	int (*f)(va_list);
 	va_list args;
 
@@ -27,14 +27,14 @@ int _printf(const char *format, ...)
 		&& format[i + 1] != '%' && format[i + 1] != 'd'
 		&& format[i + 1] != 'i')
 	{
-		j += _putchar(format[i]);
-		j += _putchar(format[i + 1]);
+		count += _putchar(format[i]);
+		count += _putchar(format[i + 1]);
 		i++;
 	}
 	else
 	{
 		f = get_func(&format[i + 1]);
-		j += f(args);
+		count += f(args);
 		i++;
 	}
 	}
@@ -42,10 +42,10 @@ int _printf(const char *format, ...)
 	else
 	{
 	_putchar(format[i]);
-	j++;
+	count++;
 	}
 	i++;
 	}
 	va_end(args);
-	return (j);
+	return (count);
 }
