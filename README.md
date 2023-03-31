@@ -20,7 +20,7 @@ This repository contains C program for printf that is a function in the C standa
 
 ## **Prototype**
 
-'int _printf(const char *format, ...);'
+```int _printf(const char *format, ...);
 
 * Returns: the number of characters printed (excluding the null byte used to end output to strings).
 * write output to stdout, the standard output stream.
@@ -30,15 +30,18 @@ This repository contains C program for printf that is a function in the C standa
 
 * Our code will be compiled this way:
 
-'gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c'
+```gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
 ## **Betty style**
 
 * It will be checked using:
 
-'betty-style.pl'
+
+```betty-style.pl
+
 and 
-'betty-doc.pl'
+
+```betty-doc.pl
 
 ## **Testing the program**
 
@@ -46,7 +49,7 @@ The main function is a special function that serves as the starting point for pr
 
 You must use the main.c file below to verify the code:
 
-'#include <limits.h>
+```#include <limits.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -89,13 +92,13 @@ int main(void)
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
     return (0);
-}'
+}
 
 ## **Output Check**
 
 * After compiling the program, the output must show the result below:
 
-'alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+```alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 alex@ubuntu:~/c/printf$ ./printf
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
@@ -121,7 +124,7 @@ Len:[12]
 Len:[12]
 Unknown:[%r]
 Unknown:[%r]
-alex@ubuntu:~/c/printf$' 
+alex@ubuntu:~/c/printf$ 
 
 
 ## **Authors**
