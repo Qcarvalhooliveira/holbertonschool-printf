@@ -18,22 +18,6 @@ _printf(const char *format, ...);
 The printf function return the number of characters printed. If  an error has occured it returns a negative value.
 
 .SH OPTIONS
-There are many options
-.TP
-\fB-%c\fP
-%c : Print a single character.
-.TP
-\fB-%s\fP
-%s : Print a string.
-.TP
-\fB-%%\fP
-%% : Print a percent sign.
-.TP
-\fB-%d\fP
-%d : Print a decimal (base 10) number.
-.TP
-\fB-%i\fP
-%i : Print a integer in base 10.
 .SH EXAMPLE
 To print a string
 
@@ -44,7 +28,7 @@ To print a string
 
 
 
+.SH AUTHORS
 
-
-.SH AUTHOR
-
+Aicha CHOUIKHI
+Queise CARVALHO
