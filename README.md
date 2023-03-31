@@ -6,21 +6,21 @@ This repository contains C program for printf that is a function in the C standa
 
 ## **TASKS**
 
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+###0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 
 * Write a function that produces output according to a format.
 
-1. Education is when you read the fine print. Experience is what you get if you don't
+###1. Education is when you read the fine print. Experience is what you get if you don't
 
 * Handle the following conversion specifiers.
 
-2. Just because it's in print doesn't mean it's the gospel
+###2. Just because it's in print doesn't mean it's the gospel
 
 * Create a man page for your function.
 
 ## **Prototype**
 
-```int _printf(const char *format, ...);
+```int _printf(const char *format, ...);```
 
 * Returns: the number of characters printed (excluding the null byte used to end output to strings).
 * write output to stdout, the standard output stream.
@@ -30,22 +30,22 @@ This repository contains C program for printf that is a function in the C standa
 
 * Our code will be compiled this way:
 
-```gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+```gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c```
 
 ## **Betty style**
 
 * It will be checked using:
 
 
-```betty-style.pl
+```betty-style.pl```
 
 and 
 
-```betty-doc.pl
+```betty-doc.pl```
 
 ## **Testing the program**
 
-The main function is a special function that serves as the starting point for program execution. When a C program is run, the operating system loads the executable file and starts executing instructions at the memory location specified by the main function. 
+The main function is a special function that serves as the starting point for program execution. When a C program is run, the operating system loads the executable file and starts executing instructions at the memory location specified by the main function.
 
 You must use the main.c file below to verify the code:
 
@@ -92,7 +92,7 @@ int main(void)
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
     return (0);
-}
+}```
 
 ## **Output Check**
 
@@ -124,16 +124,10 @@ Len:[12]
 Len:[12]
 Unknown:[%r]
 Unknown:[%r]
-alex@ubuntu:~/c/printf$ 
+alex@ubuntu:~/c/printf$```
 
 
 ## **Authors**
 
 * [Aisha Chouikhi] - (https://github.com/Aicha-Chouikhi)
-* [Queise Oliveira] - (https://github.com/Qcarvalhooliveira) 
-
-
-
-
-
-
+* [Queise Oliveira] - (https://github.com/Qcarvalhooliveira)
