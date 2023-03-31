@@ -8,7 +8,7 @@ This repository contains C program for printf that is a function in the C standa
 
 #### **0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life**
 
-* Write a function that produces output according to a format.**
+* Write a function that produces output according to a format.
 
 #### **1. Education is when you read the fine print. Experience is what you get if you don't**
 
@@ -17,6 +17,17 @@ This repository contains C program for printf that is a function in the C standa
 #### **2. Just because it's in print doesn't mean it's the gospel**
 
 * Create a man page for your function.
+
+## **Authorized functions and macros**
+
+* write (man 2 write)
+* malloc (man 3 malloc)
+* free (man 3 free)
+* va_start (man 3 va_start)
+* va_end (man 3 va_end)
+* va_copy (man 3 va_copy)
+* va_arg (man 3 va_arg)
+
 
 ## **Prototype**
 
@@ -135,5 +146,5 @@ alex@ubuntu:~/c/printf$
 
 ## **Authors**
 
-* [ Aisha Chouikhi ] - (https://github.com/Aicha-Chouikhi)
-* [ Queise Oliveira ] - (https://github.com/Qcarvalhooliveira)
+* [Aisha Chouikhi] - (https://github.com/Aicha-Chouikhi)
+* [Queise Oliveira] - (https://github.com/Qcarvalhooliveira)
