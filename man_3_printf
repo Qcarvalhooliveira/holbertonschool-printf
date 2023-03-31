@@ -1,10 +1,13 @@
-./" This is the man page of the function _printf
-.TH _printf(3) "30-03-2023" "V1.0" "_printf man page"
+./"manual page of the function _printf
+
 .SH NAME
+
 _printf
 
 .SH DESCRIPTION
-The printf function is a commonly used function in programming languages that allows for formatted output to be printed to the screen. The name "printf" is derived from "print formatted", as it takes a format string as an argument which specifies how to format the output. The format string includes instructions for mixing multiple strings and other data types into the final output string that will be displayed on the screen.
+
+The _printf function is short for "print formatted. It operates in a manner similar to the standard printf function by formatting and presenting data. It takes a format string and a variable number of arguments to be printed.
+When printf processes its arguments, it begins by sequentially printing each character found in the first argument. However, when it encounters a percent sign (%), it recognizes this as a format specifier and moves on to the next argument, using its value to print it in accordance with the specified format. After this, printf resumes printing the remaining characters from the first argument. It is possible to include multiple format specifiers in the printf string, in which case each specifier corresponds to a specific argument in the order they are given.
 
 .SH SYNOPSIS
 
@@ -18,14 +21,42 @@ _printf(const char *format, ...);
 The printf function return the number of characters printed. If  an error has occured it returns a negative value.
 
 .SH OPTIONS
+
+%c print a single character
+
+%d print a decimal (base 10) number
+
+%i print a decimal (base 10) number
+
+%s print a string of characters
+
+%%  Print percent (%) 
+
 .SH EXAMPLE
 To print a string
 
 .SH Exemple
 
+#include "main.h"
 
+/**
+ * main - main function
+ * Return: Always 0 (Sucess)
+ */
+int main(void)
+{
 
+   
+        int d = 20;
+        char *s;
+        s = "printf"
 
+        _printf("cohort %d, project %s.\n", d, s);
+        return (0);
+}
+
+.SS Output
+cohort 20, project printf.
 
 
 .SH AUTHORS
