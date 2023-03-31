@@ -6,15 +6,15 @@ This repository contains C program for printf that is a function in the C standa
 
 ## **TASKS**
 
-###0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+###0.**I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 
 * Write a function that produces output according to a format.
 
-###1. Education is when you read the fine print. Experience is what you get if you don't
+### **1. Education is when you read the fine print. Experience is what you get if you don't
 
 * Handle the following conversion specifiers.
 
-###2. Just because it's in print doesn't mean it's the gospel
+### **2. Just because it's in print doesn't mean it's the gospel
 
 * Create a man page for your function.
 
@@ -94,6 +94,8 @@ int main(void)
     return (0);
 }```
 
+
+
 ## **Output Check**
 
 * After compiling the program, the output must show the result below:
@@ -125,6 +127,8 @@ Len:[12]
 Unknown:[%r]
 Unknown:[%r]
 alex@ubuntu:~/c/printf$```
+
+
 
 
 ## **Authors**
