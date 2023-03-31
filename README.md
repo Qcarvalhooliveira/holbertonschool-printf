@@ -50,7 +50,7 @@ This repository contains C program for printf that is a function in the C standa
 
 ```betty-style.pl```
 
-and 
+and
 
 ```betty-doc.pl```
 
@@ -146,5 +146,5 @@ alex@ubuntu:~/c/printf$
 
 ## **Authors**
 
-* [Aisha Chouikhi] - (https://github.com/Aicha-Chouikhi)
-* [Queise Oliveira] - (https://github.com/Qcarvalhooliveira)
+* [Aisha Chouikhi](https://github.com/Aicha-Chouikhi)
+* [Queise Oliveira](https://github.com/Qcarvalhooliveira)
